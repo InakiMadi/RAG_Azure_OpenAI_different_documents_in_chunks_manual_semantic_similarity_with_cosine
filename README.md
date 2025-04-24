@@ -16,8 +16,8 @@ This is a simple RAG example using Azure OpenAI API.
 - In that resource, I deployed gpt-35-turbo and text-embedding-3-small.
 - Running the code, I had the error 400 - chatCompletions isn't a function from the model I deployed.
 - I tried different versions of gpt-35-turbo, which has a chatCompletions in OpenAI, with no luck.
-- Fix: Deploy gpt-4.1.
-- Although going to portal.azure.com was the initial idea, Azure AI Foundry is really the place to select and deploy models.
+- Fix: Deploy gpt-4.1 instead of gpt-35-turbo.
+- Note: Although going to portal.azure.com is the initial idea, Azure AI Foundry is really the place to select and deploy models.
 
 ### Details of the project:
 
@@ -25,5 +25,6 @@ This is a simple RAG example using Azure OpenAI API.
 2. RAG. Retrieves information from different documents and answers queries with respect to them.
     - Texts: Extract texts from different PDFs using PdfReader.
     - Chunks: Divide each text in chunks to simulate larger documents for knowledge basis.
-    - Embeddings: OpenAI API.
+    - chatCompletions: Azure OpenAi with gpt-4.1.
+    - Embeddings: Azure OpenAI with text-embedding-3-small.
     - Semantic similarity: Cosine between embeddings from knowledge basis and query.
