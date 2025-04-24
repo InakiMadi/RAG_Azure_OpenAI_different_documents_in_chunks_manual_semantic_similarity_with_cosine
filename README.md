@@ -6,7 +6,7 @@ First of all, install all requirements.
 
 This is a simple RAG example using Azure OpenAI API.
 
-### Issues and learning:
+### Fixed issues and what I learnt:
 
 - There are Resources (usually in portal.azure.com) and Deployments (aoi.azure.com or Azure AI Foundry).
 - In a given Resource you can deploy several models. In this case, we need a GPT and an Embedding model.
